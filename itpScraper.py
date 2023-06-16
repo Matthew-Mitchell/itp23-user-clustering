@@ -137,6 +137,7 @@ class itpScraper:
             time.sleep(2)
             driver.get(cur_page) #Return to original page.
     def parse_all_user_rsvps(self, last_user_scraped=None):
+    	scrape = True
         if last_user_scraped:
             scrape = False #If last_user_scraped is specified do not scrape until found
         driver = self.driver
